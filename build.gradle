@@ -10,7 +10,13 @@ version = '1.0'
 java {
 	sourceCompatibility = '17'
 }
-
+jar {
+	manifest {
+		attributes(
+				'Main-Class': 'PlatziMarketApplication.main'
+		)
+	}
+}
 repositories {
 	mavenCentral()
 }
